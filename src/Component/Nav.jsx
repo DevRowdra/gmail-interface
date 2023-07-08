@@ -3,9 +3,10 @@ import { TbAdjustmentsHorizontal } from 'react-icons/tb';
 import { FiSettings } from 'react-icons/fi';
 import { BsQuestionLg } from 'react-icons/bs';
 import { PiDotsNineBold } from 'react-icons/pi';
+
 const Nav = () => {
   return (
-    <div className="navbar justify-between  bg-base-100">
+    <div className="navbar justify-between bg-base-100">
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
           <svg
@@ -26,13 +27,9 @@ const Nav = () => {
           <a className="btn btn-ghost normal-case text-xl">Gmail</a>
         </div>
       </div>
-      {/* ================================================ */}
       <div className="w-full flex justify-center">
-        <form className="w-3/5 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:shadow-md">
-          <label
-            htmlFor="search"
-            className="mb-2 text-sm font-medium text-gray-900 sr-only"
-          >
+        <form className="w-full sm:w-3/5 md:w-2/5 lg:w-1/3 xl:w-1/4 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:shadow-md">
+          <label htmlFor="search" className="sr-only">
             Search
           </label>
           <div className="relative">
@@ -68,17 +65,19 @@ const Nav = () => {
           </div>
         </form>
       </div>
-      {/* ===================================================== */}
       <div className="">
-        <div className='flex'>
-            <div className=' flex  justify-center items-center '>
-                <PiDotsNineBold className='text-3xl mr-3'></PiDotsNineBold>
-<BsQuestionLg className='text-3xl mr-3'></BsQuestionLg>
-            <FiSettings className='text-3xl mr-3'></FiSettings>
-            </div>
-          <div className="avatar  ">
-            <div className="w-12  rounded-full">
-              <img src="https://images.unsplash.com/photo-1581704906775-891dd5207444?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJveXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" />
+        <div className="flex">
+          <div className="flex justify-center items-center space-x-3">
+            <PiDotsNineBold className="text-3xl" />
+            <BsQuestionLg className="text-3xl" />
+            <FiSettings className="text-3xl" />
+          </div>
+          <div className="avatar">
+            <div className="w-12 h-12 rounded-full">
+              <img
+                src="https://images.unsplash.com/photo-1581704906775-891dd5207444?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJveXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="Profile"
+              />
             </div>
           </div>
         </div>
